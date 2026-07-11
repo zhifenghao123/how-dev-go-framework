@@ -1,0 +1,87 @@
+### 添加用户
+POST http://127.0.0.1:8080/interface
+Content-Type: application/json
+
+{
+  "RequestId":"test_AddUser",
+  "Action":"AddUser",
+  "UserId": 1004,
+  "Username": "newuser",
+  "Password": "password123",
+  "Email": "newuser@example.com",
+  "Phone": "13800138004",
+  "Status": 1
+}
+
+### 根据ID获取用户
+POST http://127.0.0.1:8080/interface
+Content-Type: application/json
+
+{
+  "RequestId":"test_GetUserById",
+  "Action":"GetUserById",
+  "UserId": 1001
+}
+
+### 用户登录
+POST http://127.0.0.1:8080/interface
+Content-Type: application/json
+
+{
+  "RequestId":"test_Login",
+  "Action":"Login",
+  "username": "admin",
+  "password": "admin"
+}
+
+### 用户登录 - user1
+POST http://127.0.0.1:8080/interface
+Content-Type: application/json
+
+{
+  "RequestId":"test_Login_User1",
+  "Action":"Login",
+  "username": "user1",
+  "password": "hello"
+}
+
+### 用户登录 - test
+POST http://127.0.0.1:8080/interface
+Content-Type: application/json
+
+{
+  "RequestId":"test_Login_Test",
+  "Action":"Login",
+  "username": "test",
+  "password": "test"
+}
+
+### 获取用户详情
+POST http://127.0.0.1:8080/interface
+Content-Type: application/json
+
+{
+  "RequestId":"test_GetUserDetail",
+  "Action":"GetUserDetail",
+  "userId": 1001
+}
+
+### 获取用户详情 - user1
+POST http://127.0.0.1:8080/interface
+Content-Type: application/json
+
+{
+  "RequestId":"test_GetUserDetail_User1",
+  "Action":"GetUserDetail",
+  "userId": 1002
+}
+
+### 获取用户详情 - test
+POST http://127.0.0.1:8080/interface
+Content-Type: application/json
+
+{
+  "RequestId":"test_GetUserDetail_Test",
+  "Action":"GetUserDetail",
+  "userId": 1003
+}
