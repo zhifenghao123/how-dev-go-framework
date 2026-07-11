@@ -1,0 +1,22 @@
+middleware: TestMiddleware1
+prefix: /test
+groups:
+  - prefix: /pre1
+    middleware: TestMiddleware2
+    groups:
+      - prefix: /pre2
+        middleware: TestMiddleware3
+        actions:
+          GET /test1: {uses: TestController@Test1}
+    actions:
+      get /test2: {uses: TestController@Test1, middleware: TestMiddleware4}
+      post /test3: {uses: TestController@Test1}
+
+actions:
+  /test4: {method: get, uses: TestController@Test2}
+  get /test5: {}  #错误配置，缺少uses
+  get /test6: {uses: TestController} #错误配置，缺少action
+  get get /test7: {uses: TestController@List} #错误配置，method和uri错误
+
+import:
+  - config/test_router_2.yml

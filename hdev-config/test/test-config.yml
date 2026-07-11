@@ -1,0 +1,21 @@
+user:
+  name: hzf
+  age: 30
+  male: true
+  female: 0
+  property:
+    aa: aa
+    bb: bb
+    11: 11
+  list:
+    - aaa
+    - bbb
+    - ccc
+struct:
+  Param1: aaaaaa
+  Param2: bbbbbb
+struct_array:
+  - Param1: aaaaaaaa
+    Param2: bbbbbbbb
+  - Param1: cccccccc
+    Param2: dddddddd

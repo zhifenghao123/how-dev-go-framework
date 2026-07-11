@@ -1,0 +1,35 @@
+{
+  "user": {
+    "name": "hzf",
+    "age": 30,
+    "male": true,
+    "female": 0,
+    "property": {
+      "aa": "aa",
+      "bb": "bb",
+      "11": 11
+    },
+    "list": ["aaa", "bbb", "ccc"]
+  },
+  "struct": {
+    "Param1": "aaa",
+    "Param2": "bbb"
+  },
+  "struct_array": [
+    {
+      "Param1": "aaa",
+      "Param2": "bbb",
+      "Param3": 10
+    },
+    {
+      "Param1": "ccc",
+      "Param2": "ddd",
+      "Param3": 3.3
+    }
+  ],
+  "int": [
+    1,2,3.3
+  ],
+  "int1": 3.3,
+  "int2": 3
+}
