@@ -1,0 +1,8 @@
+### test for HealthCheck
+POST http://127.0.0.1:8080/interface
+Content-Type: application/json
+
+{
+  "RequestId":"test_HealthCheck",
+  "Action":"HealthCheck"
+}

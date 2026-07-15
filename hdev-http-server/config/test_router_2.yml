@@ -1,0 +1,15 @@
+prefix: /test2
+middleware: TestMiddleware5
+groups:
+  - prefix: /pre3
+    middleware: TestMiddleware6
+    groups:
+      - prefix: /pre4
+        middleware: TestMiddleware7
+        actions:
+          GET /test8: {uses: TestController@Test3}
+actions:
+  /test9: {method: get, uses: TestController@Test4}
+
+import:
+  - config/test_router_3.yml

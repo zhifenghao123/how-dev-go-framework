@@ -1,0 +1,11 @@
+groups:
+  # API3.0协议,需要根据middleware指定返回协议
+  - prefix:
+    middleware: CORS
+    actions:
+      OPTION HttpOption: { uses: HttpOptionController@HttpOption }
+      POST HealthCheck: { uses: HealthCheckController@HealthCheck }
+      POST AddUser: { uses: UserController@AddUser }
+      POST GetUserById: { uses: UserController@GetUserById }
+      POST Login: { uses: UserController@Login }
+      POST GetUserDetail: { uses: UserController@GetUserDetail }

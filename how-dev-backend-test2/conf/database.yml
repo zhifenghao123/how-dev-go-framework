@@ -1,0 +1,12 @@
+mysql:
+  hao_db3:
+    driver: mysql
+    ip: 127.0.0.1
+    port: 3306
+    database: hao_db3
+    username: root
+    password: root_123
+    charset: utf8
+    maxConn: 20
+    maxIdle: 1
+    connMaxLift: 300

@@ -1,0 +1,3 @@
+actions:
+  /test10: {method: post, uses: TestController@Test2}
+#  get /test10: {uses: TestController@Test2}

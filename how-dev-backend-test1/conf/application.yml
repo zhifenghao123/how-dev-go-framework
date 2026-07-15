@@ -1,0 +1,13 @@
+process:
+  - class: HttpServer
+    params:
+      Name: how-dev-go-app
+      Ip: 0.0.0.0
+      Port: 8080
+      ReadTimeout: 1
+      WriteTimeout: 30
+      Route: conf/route.yml
+import:
+  - conf/database.yml @database
+application:
+  allowHost: localhost:3000,127.0.0.1:3000
